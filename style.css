@@ -1,5 +1,10 @@
 * {
   font-family: 'M PLUS 1 Code', sans-serif;
+  color: white;
+  background: black;
+}
+a {
+  color: green;
 }
 /* [0] */
 @font-face {
