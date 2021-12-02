@@ -998,7 +998,7 @@ forward 2
 up 2
 down 8
 forward 6`;
-code = code.replace("up", "'up").replace("down", "'down").replace("forward", "'forward").replace("0", "0',").replace("1", "1',").replace("2", "2',").replace("3", "3',").replace("4", "4',").replace("5", "5',").replace("6", "6',").replace("7", "7',").replace("8", "8',").replace("9", "9',");
+code = code.split("\n");
 var vert = 0;
 var hor = 0;
 
