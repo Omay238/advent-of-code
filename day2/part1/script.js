@@ -998,5 +998,5 @@ forward 2
 up 2
 down 8
 forward 6
-`.slice();
+`.replace("\n", ",");
 document.querySelector("#out").innerHTML = code;
