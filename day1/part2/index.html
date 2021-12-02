@@ -7,6 +7,19 @@
   <body>
     <a href="..">Back</a>
     <p id="out"></p>
+    <p>Script to make this work</p>
+    <code>
+let vals = [];
+let inc = 0;
+for(let i = 1; i < code.length-1; i++){
+  vals.push(code[i-1]+code[i]+code[i+1]);
+}
+for(let i = 1; i < vals.length; i++){
+  if(vals[i] > vals[i-1]){
+    inc++;
+  }
+}
+    </code>
     <a href="https://github.com/Omay238/advent-of-code/tree/main/day1/part2">View the source on Github</a>
   </body>
   <script src="script.js"></script>
