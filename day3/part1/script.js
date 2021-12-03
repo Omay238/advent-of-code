@@ -5,9 +5,9 @@ var epsilon = "";
 for(var i in code){
   for(var j = 0; j < code[i].length; j++){
     if(parseInt(code[i].charAt(j)) === 0){
-      common[j][0] = common[j][0]++;
+      common[j][0]++;
     }else{
-      common[j][1] = common[j][1]++;
+      common[j][1]++;
     }
   }
 }
