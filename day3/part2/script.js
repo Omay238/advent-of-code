@@ -9,29 +9,19 @@ var codeCO2 = code;
 while(codeO2.length > 1){
   for(var i in codeO2){
     if(codeO2[i].charAt(bp) === "0"){
-      codeO2[0]++;
+      common[bp][0]++;
     }else{
-      codeO2[1]++;
+      common[bp][1]++;
     }
   }
   for(var i in codeO2){
     if(common[bp][0] > common[bp][1]){
-      try{
-        if(codeO2[i].charAt(bp) === "1"){
-          codeO2.splice(i, 1);
-        }
-      }catch(err){
-        console.log(err);
-        break;
+      if(codeO2[i].charAt(bp) === "1"){
+        codeO2.splice(i, 1);
       }
     }else{
-      try{
-        if(codeO2[i].charAt(bp) === "0"){
-          codeO2.splice(i, 1);
-        }
-      }catch(err){
-        console.log(err);
-        break;
+      if(codeO2[i].charAt(bp) === "0"){
+        codeO2.splice(i, 1);
       }
     }
   }
@@ -42,9 +32,9 @@ bp = 0;
 while(codeCO2.length > 1){
   for(var i in codeCO2){
     if(codeCO2[i].charAt(bp) === "0"){
-      codeCO2[0]++;
+      common[bp][0]++;
     }else{
-      codeCO2[1]++;
+      common[bp][1]++;
     }
   }
   for(var i in codeCO2){
