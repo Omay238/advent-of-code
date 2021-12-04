@@ -4,53 +4,20 @@ var bp = 0;
 var codeO2 = code;
 var codeCO2 = code;
 //O2
-while(codeO2.length > 1){
+whlle(codeO2.length > 1){
   for(var i in codeO2){
-    if(codeO2[i].charAt(bp) === "0"){
-      common[0][0]++;
-    }else{
-      common[0][1]++;
-    }
+    common[parseInt(codeO2[i].charAt(i))]++;
   }
   for(var i in codeO2){
-    if(common[0][0] > common[0][1]){
-      if(codeO2[i].charAt(bp) === "1"){
-        codeO2.splice(i, 1);
-        console.log(bp);
-      }
-    }else{
-      if(codeO2[i].charAt(bp) === "0"){
-        codeO2.splice(i, 1);
-      }
+    var mc = (common[0] > common[1]) ? 0 : 1;
+    if(parseInt(codeO2.charAt(bp)) !== mc){
+      codeO2.splice(i, 1);
     }
   }
   bp++;
-}
-//CO2
-common = [0,0];
-bp = 0;
-while(codeCO2.length > 1){
-  for(var i in codeCO2){
-    if(codeCO2[i].charAt(bp) === "0"){
-      common[0][0]++;
-    }else{
-      common[0][1]++;
-    }
-  }
-  for(var i in codeCO2){
-    if(common[0][0] < common[0][1]){
-      if(codeCO2[i].charAt(bp) === "1"){
-        codeCO2.splice(i, 1);
-      }
-    }else{
-      if(codeCO2[i].charAt(bp) === "0"){
-        codeCO2.splice(i, 1);
-      }
-    }
-  }
-  bp++;
+  console.log(bp);
 }
 //Out
-var c = parseInt(codeCO2[0], 2);
+//var c = parseInt(codeCO2[0], 2);
 var o = parseInt(codeO2[0], 2);
-document.querySelector("#out").innerHTML = c*o;
+//document.querySelector("#out").innerHTML = c*o;
