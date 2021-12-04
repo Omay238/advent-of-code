@@ -27,6 +27,7 @@ while(codeO2.length > 1){
       }
     }
   }
+  console.log(bp);
   bp++;
 }
 //CO2
