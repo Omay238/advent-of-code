@@ -4,7 +4,7 @@ var bp = 0;
 var codeO2 = code;
 var codeCO2 = code;
 //O2
-whlle(codeO2.length > 1){
+while(codeO2.length > 1){
   for(var i in codeO2){
     common[parseInt(codeO2[i].charAt(i))]++;
   }
