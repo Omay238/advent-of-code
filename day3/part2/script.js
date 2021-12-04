@@ -37,6 +37,6 @@ var codeCO2 = filter(code, 1);
   console.log(bp);
 }*/
 //Out
-var c = parseInt(codeCO2[0], 2);
-var o = parseInt(codeO2[0], 2);
+var c = parseInt(codeCO2, 2);
+var o = parseInt(codeO2, 2);
 document.querySelector("#out").innerHTML = c*o;
