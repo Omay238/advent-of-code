@@ -18,12 +18,10 @@ while(codeO2.length > 1){
     if(common[bp][0] > common[bp][1]){
       if(codeO2[i].charAt(bp) === "1"){
         codeO2.splice(i, 1);
-        break;
       }
     }else{
       if(codeO2[i].charAt(bp) === "0"){
         codeO2.splice(i, 1);
-        break;
       }
     }
   }
