@@ -10,7 +10,7 @@ while(codeO2.length > 1){
   }
   for(var i in codeO2){
     var mc = (common[0] > common[1]) ? 0 : 1;
-    if(parseInt(codeO2.charAt(bp)) !== mc){
+    if(parseInt(codeO2[i].charAt(bp)) !== mc){
       codeO2.splice(i, 1);
     }
   }
