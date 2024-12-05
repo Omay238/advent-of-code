@@ -12,4 +12,4 @@ for i in range(len(sd)):
                         sd[i - 1][j + 1] == "S" and sd[i + 1][j - 1] == "M")):
                     out = out + 1
 
-print (out)
+print(f"{year}-{day}-{part}: {out}")

@@ -28,4 +28,4 @@ for i in range(len(sd)):
                     if sd[i + k[0][0]][j + k[0][1]] == "M" and sd[i + k[1][0]][j + k[1][1]] == "A" and sd[i + k[2][0]][j + k[2][1]] == "S":
                         out = out + 1
 
-print (out)
+print(f"{year}-{day}-{part}: {out}")
